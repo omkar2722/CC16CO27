@@ -3,16 +3,20 @@
 using namespace std;
 int main()
 {
-	  int strlen;
-	  string str,strl; 
+	   int i; 
+	  char str[100];
 	  cout<<"enter the string "<<endl;
-	  cin>>str;
-       cout<<"the string length is"<<endl;   
-        strl=str;
-        while (strl!=0)
-        {    
-	     strl=strl/10;
-         strlen=strlen+1;
-	    }
-	cout<<strlen;
-}
+	  for( i=0;i<100;i++);
+	  cin>>str[i];
+	 
+	 for( i=0;i<100;i++)
+	 if((str[i]>64)&&(str[i]<92))
+	  cout<<"Alphabet ";
+     else if((str[i]>47)&&(str[i]<58))
+       cout<<"integer ";
+      else if((str[i]>96)&&(str[i]<123))
+         cout<<"alphabet ";
+       else
+         cout<<"special_character "; 
+         
+}   
